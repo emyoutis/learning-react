@@ -1,0 +1,49 @@
+.todo-list {
+	border-radius: 4px;
+	border: 1px #4fa976 solid;
+	padding: 10px;
+}
+
+.todo-list ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.todo-list li {
+	background-color: #77d5a1;
+	list-style-position: inside;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+
+.todo-list li:last-child {
+	margin-bottom: 0;
+}
+
+.todo-list li button {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 700;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	margin: 1px 5px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.todo-list li button.done {
+	color: #5cb85c;
+}
+
+.todo-list li button.remove {
+	color: #c9302c;
+}
+
+
+.todo-list li .li-buttons {
+	float: right;
+}
