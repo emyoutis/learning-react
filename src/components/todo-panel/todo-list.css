@@ -35,8 +35,16 @@
 	cursor: pointer;
 }
 
-.todo-list li button.done {
+.todo-list li.done button.done {
 	color: #5cb85c;
+}
+
+.todo-list li.pending button.done {
+	color: #5a5a5a;
+}
+
+.todo-list li.pending {
+	background-color: rgba(146, 146, 146, 0.36);
 }
 
 .todo-list li button.remove {

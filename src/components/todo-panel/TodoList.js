@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import TodoItem from "./TodoItem";
+import './todo-list.css';
 
 
 function TodoList(props) {
-    const tasks = props.tasks;
+    const {tasks, toggleDoneTask, deleteTask} = props;
 
     return (
         <div className="todo-list">
@@ -11,7 +12,11 @@ function TodoList(props) {
                 ? <ol>
                     {
                         tasks.map((task) => {
-                                return <TodoItem text={task.text} key={task.id}/>
+                                return <TodoItem
+                                    task={task}
+                                    deleteTask={deleteTask}
+                                    toggleDoneTask={toggleDoneTask}
+                                    key={task.id}/>
                             }
                         )
                     }
