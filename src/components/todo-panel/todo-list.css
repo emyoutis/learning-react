@@ -47,3 +47,7 @@
 .todo-list li .li-buttons {
 	float: right;
 }
+
+.todo-list .empty-message {
+	text-align: center;
+}
